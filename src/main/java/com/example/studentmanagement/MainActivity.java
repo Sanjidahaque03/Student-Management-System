@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button.setOnClickListener(this);
 
 
-}
+    }
 
     @Override
     public void onClick(View v) {
@@ -39,9 +39,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String cgpa1 = cgpa.getText().toString();
         if (v.getId()==R.id.button_id){
             textView.setText("Name: "+name1+"\nEmail: "+email1+"\nCGPA: "+cgpa1);
+            clearText();
         }
 
+
     }
+
+    public void clearText()
+    {
+        name.setText("");
+        email.setText("");
+        cgpa.setText("");
+        name.requestFocus();
+    }
+
+
 }
 
 
