@@ -33,13 +33,13 @@
         android:textStyle="bold"
         />
 
-<!--    Email-->
+<!--    ID-->
     <EditText
-        android:id="@+id/email_id"
-        android:inputType="textEmailAddress"
+        android:id="@+id/id_id"
+        android:inputType="number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:hint="ID"
         android:textStyle="bold"
         android:textSize="20sp"
         android:layout_marginTop="5dp"
@@ -74,19 +74,23 @@
         android:textColor="#FFFFFF"
         android:textSize="40sp" />
 
-    <TextView
-        android:id="@+id/textView_id"
+
+    <TableLayout
         android:layout_width="wrap_content"
-        android:layout_height="360dp"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb"
         >
-    </TextView>
-
-
-
-
-
-
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tablerow"
+            />
+        <TextView
+            android:id="@+id/textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="360dp"
+            android:orientation="vertical"/>
+    </TableLayout>
 
 
 </LinearLayout>
